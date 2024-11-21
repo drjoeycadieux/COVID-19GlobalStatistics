@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COVID-19 Global Statistics</title>
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- Add Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Add D3.js CDN -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+    <div class="alerts">
+      <p>
+        The data provided by this API is for informational purposes only and
+        should not be relied upon for life-critical decisions. Thank you.
+      </p>
+    </div>
+    <header>
+      <h1>COVID-19 Global Statistics</h1>
+    </header>
+
+    <section id="statistics">
+      <div class="stat-box">
+        <h3>Cases</h3>
+        <p id="total-cases">Loading...</p>
+      </div>
+      <div class="stat-box">
+        <h3>Deaths</h3>
+        <p id="total-deaths">Loading...</p>
+      </div>
+      <div class="stat-box">
+        <h3>Recovered</h3>
+        <p id="total-recovered">Loading...</p>
+      </div>
+    </section>
+
+    <section id="charts">
+      <!-- Chart.js - Bar chart for cases, deaths, and recoveries -->
+      <canvas id="covidBarChart" width="400" height="200"></canvas>
+
+      <!-- D3.js - Simple world map or custom visualization placeholder -->
+      <div id="covidMap" style="width: 100%; height: 400px"></div>
+    </section>
+
+    <footer>
+      <p>Website Designed and Developed by Joey Cadieux | Montreal, QC</p>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
