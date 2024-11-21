@@ -63,11 +63,12 @@ footer {
 
 .alerts {
   padding: 3px;
-  background-color: firebrick;
+  background-color: rgba(207, 189, 25, 0.918);
 }
 
 .alerts p {
-  color: white;
+  color: black;
+  font-weight: bold;
   text-align: center;
   font-family: sans-serif;
 }
